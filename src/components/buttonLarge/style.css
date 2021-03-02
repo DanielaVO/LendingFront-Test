@@ -1,0 +1,14 @@
+.buttonLarge {
+    border: none;
+    padding: 4px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .buttonLarge:hover{
+      background-color: gray;
+  }

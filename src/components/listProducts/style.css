@@ -1,0 +1,26 @@
+.section {
+    background-color: #f2f4f4;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section__title{
+      background-color: #e6e6e6de;
+      height: 5%;
+      color: gray;
+  }
+
+  .title__small{
+    margin: 6%;
+  }
+
+  .section__footer{
+      background-color: #e6e6e6de;
+      height: 3rem;
+      margin-top: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  }

@@ -1,0 +1,28 @@
+.container {
+  padding: 20px;
+}
+
+.container:hover {
+  background-color: #05a2aa;
+  color: white;
+  cursor: pointer;
+}
+
+.container__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info__product {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__value {
+  text-align: end;
+}
+
+hr {
+  margin: 0;
+}
