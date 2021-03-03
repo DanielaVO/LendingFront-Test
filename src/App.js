@@ -2,17 +2,17 @@ import "./App.css";
 import ListProducts from "./components/listProducts";
 import ProductDetails from "./components/productDetails";
 import Footer from "./components/footer";
+import Header from "./components/header";
+import Title from "./components/title";
 
 function App() {
   return (
     <div className="App">
-      <header className="App__header"></header>
+      <Header />
       <div className="App__container">
-        <div className="container__title">
-          <h1>Advances of syndication</h1>
-        </div>
+        <Title />
         <div className="container__sections">
-          <section className="App__section">
+          <section className="section__principal">
             <ListProducts />
             <ProductDetails />
           </section>

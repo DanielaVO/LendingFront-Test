@@ -6,19 +6,19 @@ const Product = () => {
       <div className="container">
         <div className="container__info">
           <div className="info__product">
-            <label className="product__id">Product ID</label>
-            <label>12345</label>
+            <label className="info__general">Product ID</label>
+            <label className="info__id">12345</label>
           </div>
           <div className="info__product">
-            <small>Advance</small>
-            <small>21/12/2019</small>
+            <label className="info__advance">Advance</label>
+            <label className="info__general">21/12/2019</label>
           </div>
         </div>
         <div className="info__value">
-          <small>$2.899.222</small>
+          <label className="info__value--label">$2.899.222</label>
         </div>
       </div>
-      <hr/>
+      <hr />
     </>
   );
 };

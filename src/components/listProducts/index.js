@@ -2,6 +2,8 @@ import "./style.css";
 import { useEffect, useState } from "react";
 import Product from "../product";
 import ButtonLarge from "../buttonLarge";
+import Save from "../../assets/save.png";
+import Close from "../../assets/close.png";
 
 const ListProducts = () => {
   const [products, setProducts] = useState([]);
@@ -13,18 +15,8 @@ const ListProducts = () => {
       </div>
       <Product />
       <div className="section__footer">
-        <ButtonLarge
-          text="Close"
-          icon="../../assets/close.png"
-          bgColor="#05a2aa"
-          color="#fff"
-        />
-        <ButtonLarge
-          text="Sell"
-          icon="../../assets/save.png"
-          bgColor="#fff"
-          color="#05a2aa"
-        />
+        <ButtonLarge text="Close" icon={Close} bgColor="#05a2aa" color="#fff" />
+        <ButtonLarge text="Sell" icon={Save} bgColor="#fff" color="#05a2aa" />
       </div>
     </section>
   );

@@ -1,13 +1,18 @@
 import "./style.css";
-import Save from "../../assets/save.png";
+
 const ButtonLarge = (props) => {
   return (
     <div
       className="buttonLarge"
       style={{ backgroundColor: props.bgColor, color: props.color }}
     >
-      <img src={Save} width="15px" height="15px" />
-      {props.text}
+      <img
+        className="button__img"
+        src={props.icon}
+        width="10px"
+        height="10px"
+      />
+      <label className="button__label">{props.text}</label>
     </div>
   );
 };

@@ -1,14 +1,17 @@
 import "./style.css";
+import RowProduct from "../rowProduct"
 
 const ProductDetails = () => {
   return (
     <section className="App__section--detail">
       <div class="header__table">
-        <label className="table__head">Product ID </label>
-        <hr />
+        <div className="table__head">
+          <label className="head__product">Product ID</label>
+        </div>
+        <hr className="head__hr" />
         <table cellpadding="0" cellspacing="0" border="0">
           <thead className="table__head">
-            <tr>
+            <tr className="tr__head">
               <th>Investor name</th>
               <th>Sold</th>
               <th>% Purchased</th>
@@ -16,12 +19,7 @@ const ProductDetails = () => {
             </tr>
           </thead>
           <tbody className="table__tbody">
-            <tr>
-              <td>Y Cobinator</td>
-              <td>$830,800</td>
-              <td>9mm</td>
-              <td>Buttons</td>
-            </tr>
+           <RowProduct/>
           </tbody>
         </table>
       </div>

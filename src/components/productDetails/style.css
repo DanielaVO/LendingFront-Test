@@ -7,18 +7,14 @@
 
 .table__footer {
   background-color: #05a2aa;
-  min-height: 3rem;
+  min-height: 65px;
   margin-top: auto;
   color: gray;
   text-align: center;
   color: white;
 }
 
-.product__id {
-  font-weight: 700;
-  font-size: 12px;
-  color: #a0a0a0;
-}
+
 
 .table__tbody {
   background-color: white;
@@ -29,6 +25,28 @@ table {
   height: 100%;
 }
 
-.table__head{
+.table__head {
   background-color: #47dbd6;
+  height: 34px;
+  align-items: center;
+
+}
+
+.head__hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+}
+
+.head__product {
+  margin-left: 20px;
+  font-weight: 600;
+  color: white;
+  margin-top: 6px;
+}
+
+.tr__head{
+  height: 45px;
+  color: white;
+  
 }

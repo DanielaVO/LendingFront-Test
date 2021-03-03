@@ -1,14 +1,25 @@
 .buttonLarge {
-    border: none;
-    padding: 4px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
+  border: none;
+  padding: 4px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
 
-  .buttonLarge:hover{
-      background-color: gray;
-  }
+.buttonLarge:hover {
+  background-color: gray;
+}
+
+.button__img {
+  margin-right: 5px;
+  width: 11px;
+  height: 11px;
+}
+
+.button__label {
+  font-size: 12px;
+  font-weight: 700;
+}

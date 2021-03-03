@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.container:hover label{
+.container:hover label {
   color: white;
 }
 
@@ -30,4 +30,28 @@
 
 hr {
   margin: 0;
+}
+
+.info__general {
+  font-weight: 700;
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.info__id {
+  font-weight: 700;
+  color: #6d737b;
+}
+
+.info__advance {
+  font-size: 12px;
+  font-weight: 700;
+  color: #05a2aa;
+  text-align: end;
+}
+
+.info__value--label {
+  font-size: 22px;
+  font-weight: 600;
+  color: #475059;
 }
