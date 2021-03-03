@@ -1,5 +1,6 @@
 import "./style.css";
-import RowProduct from "../rowProduct"
+import RowProduct from "../rowProduct";
+import TableFooter from "../tableFooter";
 
 const ProductDetails = () => {
   return (
@@ -19,13 +20,11 @@ const ProductDetails = () => {
             </tr>
           </thead>
           <tbody className="table__tbody">
-           <RowProduct/>
+            <RowProduct />
           </tbody>
         </table>
       </div>
-      <div className="table__footer">
-        <label>Remaining amount </label>
-      </div>
+      <TableFooter amount="12345" total="1232456"/>
     </section>
   );
 };

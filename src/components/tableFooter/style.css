@@ -1,0 +1,13 @@
+.table__footer {
+    background-color: #05a2aa;
+    min-height: 65px;
+    margin-top: auto;
+    color: gray;
+    text-align: center;
+    color: white;
+  }
+
+  .table__footer--title{
+    font-weight: 300;
+    font-size: 20px;
+  }
