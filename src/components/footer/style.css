@@ -1,0 +1,11 @@
+.footer__title{
+    vertical-align: -webkit-baseline-middle;
+}
+
+.App__footer {
+    background-color: #f2f4f4;
+    min-height: 3rem;
+    margin-top: auto;
+    color: gray;
+    text-align: center;
+  }

@@ -6,8 +6,8 @@ const Product = () => {
       <div className="container">
         <div className="container__info">
           <div className="info__product">
-            <small>Product ID</small>
-            <small>12345</small>
+            <label className="product__id">Product ID</label>
+            <label>12345</label>
           </div>
           <div className="info__product">
             <small>Advance</small>
