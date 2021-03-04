@@ -1,15 +1,23 @@
 import "./style.css";
 import RowProduct from "../rowProduct";
 import TableFooter from "../tableFooter";
+import { useEffect, useState } from "react";
+import getProductDetail from "../../services/getProductDetail";
 
-const ProductDetails = () => {
+const ProductDetails = (props) => {
+  const [productDetail, setProductDetail] = useState([]);
+
+  useEffect(() => {
+    getProductDetail().then((productDetail) => setProductDetail(productDetail));
+  }, []);
+
   return (
-    <section className="App__section--detail">
+    <section className="app__section--detail">
+      <div className="detail__button">|&gt;</div>
       <div class="header__table">
         <div className="table__head">
-          <label className="head__product">Product ID</label>
+          <label className="head__product">Product ID {props.id}</label>
         </div>
-        <hr className="head__hr" />
         <table cellpadding="0" cellspacing="0" border="0">
           <thead className="table__head">
             <tr className="tr__head">
@@ -20,11 +28,11 @@ const ProductDetails = () => {
             </tr>
           </thead>
           <tbody className="table__tbody">
-            <RowProduct />
+            <RowProduct detaiil={productDetail}/>
           </tbody>
         </table>
       </div>
-      <TableFooter amount="12345" total="1232456"/>
+      <TableFooter amount="12345" total="1232456" />
     </section>
   );
 };

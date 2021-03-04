@@ -3,7 +3,10 @@ import "./style.css";
 const Product = (props) => {
   return (
     <>
-      <div className="container">
+      <div
+        className="container"
+        onClick={() => props.setItem({ id: props.id, total: props.total })}
+      >
         <div className="container__info">
           <div className="info__product">
             <label className="info__general">Product ID</label>

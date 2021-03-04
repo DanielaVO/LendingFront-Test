@@ -6,7 +6,7 @@ import Save from "../../assets/save.png";
 import Close from "../../assets/close.png";
 import getProducts from "../../services/getProducts";
 
-const ListProducts = () => {
+const ListProducts = (props) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -21,6 +21,7 @@ const ListProducts = () => {
       <div className="products"> 
         {products.map((product) => (
           <Product
+            setItem = {props.setItem}
             key={product.product_id}
             id={product.product_id}
             date={product.date}
