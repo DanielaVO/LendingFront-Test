@@ -11,7 +11,6 @@ const ProgressBarIndex = () => {
         height="11px"
         width="90%"
         isLabelVisible = {false}
-        margin="10px"
         baseBgColor="#80d1d6"
       />
       <div className="progress__percentage">
