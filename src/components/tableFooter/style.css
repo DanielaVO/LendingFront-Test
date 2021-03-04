@@ -1,13 +1,19 @@
 .table__footer {
-    background-color: #05a2aa;
-    min-height: 65px;
-    margin-top: auto;
-    color: gray;
-    text-align: center;
-    color: white;
-  }
+  background-color: #05a2aa;
+  min-height: 65px;
+  margin-top: auto;
+  color: gray;
+  text-align: center;
+  color: white;
+}
 
-  .table__footer--title{
-    font-weight: 300;
-    font-size: 20px;
-  }
+.table__footer--label {
+  font-weight: 300;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.table__footer--title {
+  align-items: end;
+  display: flex;
+}

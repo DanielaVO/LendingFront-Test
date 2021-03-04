@@ -28,3 +28,8 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.products{
+  height: calc(100% - 95px);
+  overflow: auto;
+}

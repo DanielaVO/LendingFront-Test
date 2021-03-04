@@ -28,8 +28,11 @@
   text-align: end;
 }
 
-hr {
-  margin: 0;
+.hr__product {
+  margin: 0 auto;
+  border-bottom: 0;
+  width: 260px;
+  background-color:#f4f5f5;
 }
 
 .info__general {

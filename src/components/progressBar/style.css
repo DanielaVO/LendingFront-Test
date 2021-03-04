@@ -1,0 +1,4 @@
+.progress__percentage {
+  display: flex;
+  justify-content: space-between;
+}
