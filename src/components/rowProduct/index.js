@@ -1,7 +1,6 @@
 import "./style.scss";
 import ButtonOval from "../buttonOval";
 import ProgressBarCircular from "../progressBarCircular";
-
 import Edit from "../../assets/edit.png";
 import Close from "../../assets/close_color.png";
 
@@ -13,7 +12,7 @@ const RowProduct = (props) => {
       {props.detail.map((product) => (
         <tr className="tr__body">
           <td>{product.investor}</td>
-          <td>{product.sold}</td>
+          <td>${product.sold.toLocaleString()}</td>
           <td>
             <ProgressBarCircular />
           </td>

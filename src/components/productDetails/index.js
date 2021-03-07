@@ -5,13 +5,16 @@ import { useEffect, useState } from "react";
 import getProductDetail from "../../services/getProductDetail";
 import ButtonOval from "../buttonOval";
 import Plus from "../../assets/plus.png";
+import RowProductEdit from "../rowProductEdit";
 
-const ProductDetails = (props) => {
+
+const ProductDetails = () => {
   const [productDetail, setProductDetail] = useState([]);
 
   useEffect(() => {
     getProductDetail().then((productDetail) => setProductDetail(productDetail));
   }, []);
+  console.log(productDetail)
 
   return (
     <section className="app__section--detail">
@@ -28,7 +31,7 @@ const ProductDetails = (props) => {
       <div className="header__table">
         <div>
           <div className="table__head">
-            <label className="head__product">Product ID {props.id}</label>
+            <label className="head__product">Product ID {productDetail.product_id}</label>
           </div>
           <table cellPadding="0" cellSpacing="0" border="0">
             <thead className="table__head">
@@ -40,6 +43,7 @@ const ProductDetails = (props) => {
               </tr>
             </thead>
             <tbody className="table__tbody">
+            
               <RowProduct detail={productDetail} />
             </tbody>
           </table>

@@ -1,0 +1,47 @@
+@import "../../colors.scss";
+$borderColor: #c1c1c1;
+
+.td__edit {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.tr__edit {
+  border-bottom: 1px solid $borderColor;
+  height: 70px;
+  label {
+    font-size: 12px;
+    font-weight: 700;
+    color: $primaryColor;
+  }
+}
+
+.td__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+select {
+  margin-bottom: 1em;
+  padding: 0.25em;
+  border: 0;
+  border-bottom: 1px solid $grayColor;
+  border-radius: 0;
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+input {
+  margin-bottom: 1em;
+  padding: 0.25em;
+  border: 0;
+  border-bottom: 1px solid $grayColor;
+  border-radius: 0;
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}

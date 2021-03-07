@@ -18,7 +18,7 @@ const Product = (props) => {
           </div>
         </div>
         <div className="info__value">
-          <label className="info__value--label">${props.total}</label>
+          <label className="info__value--label">${props.total.toLocaleString()}</label>
         </div>
       </div>
       <hr className="hr__product" />
