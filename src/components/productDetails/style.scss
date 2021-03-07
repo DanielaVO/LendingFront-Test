@@ -1,16 +1,18 @@
+@import "../../colors.scss";
+
 .app__section--detail {
   position: relative;
   flex: 0 0 70%;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  box-shadow: -11px 2px 17px -7px rgb(0 0 0 / 68%);
-  -webkit-box-shadow: -11px 2px 17px -7px rgb(0 0 0 / 68%);
-  -moz-box-shadow: -11px 2px 17px -7px rgb(0 0 0 / 68%);
+  background-color: $whiteColor;
+  box-shadow: -11px 2px 17px -7px RGB(0 0 0 / 68%);
+  -webkit-box-shadow: -11px 2px 17px -7px RGB(0 0 0 / 68%);
+  -moz-box-shadow: -11px 2px 17px -7px RGB(0 0 0 / 68%);
 }
 
 .table__tbody {
-  background-color: white;
+  background-color: $whiteColor;
   text-align: left;
 }
 
@@ -21,18 +23,17 @@ table {
 }
 
 .table__head {
-  background-color: #47dbd6;
+  background-color: $thirdColor;
   height: 34px;
   align-items: center;
   font-weight: 200;
-}
-
-.table__head:after {
-  content: "";
-  display: block;
-  margin-bottom: -1;
-  border-bottom: 1px solid #fff;
-  max-width: 150px;
+  &:after {
+    content: "";
+    display: block;
+    margin-bottom: -1;
+    border-bottom: 1px solid $whiteColor;
+    max-width: 150px;
+  }
 }
 
 th {
@@ -48,17 +49,17 @@ th {
 .head__product {
   margin-left: 20px;
   font-weight: 600;
-  color: white;
+  color: $whiteColor;
   margin-top: 6px;
 }
 
 .tr__head {
   height: 45px;
-  color: white;
+  color: $whiteColor;
 }
 
 .detail__button {
-  color: white;
+  color: $whiteColor;
   padding: 10px;
   position: absolute;
   right: 10px;

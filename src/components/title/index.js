@@ -1,6 +1,6 @@
-import "./style.css";
+import "./style.scss";
 
-const Title = (props) => {
+const Title = () => {
   return (
     <div className="container__title">
       <h1>Advances of syndication</h1>

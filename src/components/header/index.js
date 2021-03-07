@@ -1,9 +1,7 @@
-import "./style.css";
+import "./style.scss";
 
-const Header = (props) => {
-  return (
-    <header className="App__header"></header>
-  );
+const Header = () => {
+  return <header className="app__header"></header>;
 };
 
 export default Header;

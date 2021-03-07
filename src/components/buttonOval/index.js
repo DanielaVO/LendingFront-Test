@@ -1,9 +1,9 @@
-import "./style.css";
+import "./style.scss";
 
 const ButtonOval = (props) => {
   return (
     <div
-      class="button"
+      className="button"
       style={{
         backgroundColor: props.bgColor,
         border: props.border,

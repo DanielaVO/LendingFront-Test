@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .button {
   height: 30px;
   line-height: 30px;
@@ -7,13 +9,11 @@
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 2px 3px #c3c3c3;
-}
-
-.button:hover {
-  background-color: white;
+  box-shadow: 1px 2px 3px $box-shadow-primary;
+  &:hover {
+    background-color: $whiteColor;
+  }
 }

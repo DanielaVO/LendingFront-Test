@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import ButtonOval from "../buttonOval";
 import ProgressBarCircular from "../progressBarCircular";
 
@@ -7,9 +7,10 @@ import Close from "../../assets/close_color.png";
 
 const RowProduct = (props) => {
   console.log(props);
+
   return (
     <>
-      {props.detaiil.map((product) => (
+      {props.detail.map((product) => (
         <tr className="tr__body">
           <td>{product.investor}</td>
           <td>{product.sold}</td>
@@ -29,6 +30,9 @@ const RowProduct = (props) => {
                     height="30px"
                     width="30px"
                     sizeImg="15px"
+                    onClick={() => {
+                      console.log("Hello");
+                    }}
                   />
                   <ButtonOval
                     icon={Close}

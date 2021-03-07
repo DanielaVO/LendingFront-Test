@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import RowProduct from "../rowProduct";
 import TableFooter from "../tableFooter";
 import { useEffect, useState } from "react";
@@ -25,12 +25,12 @@ const ProductDetails = (props) => {
           sizeImg="25px"
         />
       </div>
-      <div class="header__table">
+      <div className="header__table">
         <div>
           <div className="table__head">
             <label className="head__product">Product ID {props.id}</label>
           </div>
-          <table cellpadding="0" cellspacing="0" border="0">
+          <table cellPadding="0" cellSpacing="0" border="0">
             <thead className="table__head">
               <tr className="tr__head">
                 <th>Investor name</th>
@@ -40,7 +40,7 @@ const ProductDetails = (props) => {
               </tr>
             </thead>
             <tbody className="table__tbody">
-              <RowProduct detaiil={productDetail} />
+              <RowProduct detail={productDetail} />
             </tbody>
           </table>
         </div>

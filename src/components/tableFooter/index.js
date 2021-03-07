@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 
 import ProgressBar from "../progressBar";
 const TableFooter = (props) => {

@@ -1,5 +1,5 @@
 import ProgressBar from "@ramonak/react-progress-bar";
-import "./style.css";
+import "./style.scss";
 
 const ProgressBarIndex = () => {
   return (
@@ -10,7 +10,7 @@ const ProgressBarIndex = () => {
         bgcolor="#fff"
         height="11px"
         width="90%"
-        isLabelVisible = {false}
+        isLabelVisible={false}
         baseBgColor="#80d1d6"
       />
       <div className="progress__percentage">

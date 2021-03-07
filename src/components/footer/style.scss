@@ -1,11 +1,13 @@
+@import "../../colors.scss";
+
 .footer__title {
   vertical-align: -webkit-baseline-middle;
 }
 
-.App__footer {
-  background-color: #fff;
+.app__footer {
+  background-color: $whiteColor;
   min-height: 3rem;
   margin-top: auto;
-  color: gray;
+  color: $grayColor;
   text-align: center;
 }

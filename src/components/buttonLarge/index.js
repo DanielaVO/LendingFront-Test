@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 
 const ButtonLarge = (props) => {
   return (
@@ -11,6 +11,7 @@ const ButtonLarge = (props) => {
         src={props.icon}
         width="10px"
         height="10px"
+        alt={props.text}
       />
       <label className="button__label">{props.text}</label>
     </div>

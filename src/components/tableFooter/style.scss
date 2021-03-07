@@ -1,10 +1,12 @@
+@import "../../colors.scss";
+
 .table__footer {
-  background-color: #05a2aa;
+  background-color: $primaryColor;
   min-height: 65px;
   margin-top: auto;
-  color: gray;
+  color: $grayColor;
   text-align: center;
-  color: white;
+  color: $whiteColor;
 }
 
 .table__footer--label {
@@ -14,6 +16,6 @@
 }
 
 .table__footer--title {
-  align-items: end;
+  align-items: flex-end;
   display: flex;
 }

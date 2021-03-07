@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import ListProducts from "../listProducts";
 import ProductDetails from "../productDetails";
 import { useState } from "react";

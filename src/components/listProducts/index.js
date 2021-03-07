@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import { useEffect, useState } from "react";
 import Product from "../product";
 import ButtonLarge from "../buttonLarge";

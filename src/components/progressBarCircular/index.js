@@ -1,5 +1,5 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "./style.css";
+import "./style.scss";
 
 const percentage = 66;
 

@@ -1,16 +1,21 @@
+@import "../../colors.scss";
+$containerColor: #fafafa;
+$hrColor: #f4f5f5;
+$infoColor: #a0a0a0;
+$idColor: #6d737b;
+$infoLabelColor: #475059;
+
 .container {
   padding: 20px;
-  background: #fafafa;
-}
-
-.container:hover {
-  background-color: #05a2aa;
-  color: white;
-  cursor: pointer;
-}
-
-.container:hover label {
-  color: white;
+  background: $containerColor;
+  &:hover {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    cursor: pointer;
+    label {
+      color: $whiteColor;
+    }
+  }
 }
 
 .container__info {
@@ -32,29 +37,29 @@
   margin: 0 auto;
   border-bottom: 0;
   width: 260px;
-  background-color:#f4f5f5;
+  background-color: $hrColor;
 }
 
 .info__general {
   font-weight: 700;
   font-size: 12px;
-  color: #a0a0a0;
+  color: $infoColor;
 }
 
 .info__id {
   font-weight: 700;
-  color: #6d737b;
+  color: $idColor;
 }
 
 .info__advance {
   font-size: 12px;
   font-weight: 700;
-  color: #05a2aa;
+  color: $primaryColor;
   text-align: end;
 }
 
 .info__value--label {
   font-size: 22px;
   font-weight: 600;
-  color: #475059;
+  color: $infoLabelColor;
 }

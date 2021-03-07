@@ -1,5 +1,7 @@
+$borderColor: #c1c1c1;
+
 .tr__body {
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid $borderColor;
   height: 70px;
 }
 
