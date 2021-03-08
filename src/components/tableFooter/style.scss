@@ -2,11 +2,12 @@
 
 .table__footer {
   background-color: $primaryColor;
-  min-height: 65px;
+  min-height: 47px;
   margin-top: auto;
   color: $grayColor;
   text-align: center;
   color: $whiteColor;
+  padding: 10px 20px;
 }
 
 .table__footer--label {

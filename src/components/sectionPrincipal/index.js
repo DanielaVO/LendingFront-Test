@@ -5,11 +5,12 @@ import { useState } from "react";
 
 const SectionPrincipal = (props) => {
   const [item, setItem] = useState({});
+  const [edit, setEdit] = useState(false);
 
   return (
     <section className="section__principal">
-      <ListProducts setItem={setItem} />
-      <ProductDetails item={item} />
+      <ListProducts edit={edit} setItem={setItem} />
+      <ProductDetails edit={edit} setEdit={setEdit} item={item} />
     </section>
   );
 };

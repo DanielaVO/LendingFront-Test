@@ -5,16 +5,15 @@ import Edit from "../../assets/edit.png";
 import Close from "../../assets/close_color.png";
 
 const RowProduct = (props) => {
-  console.log(props);
-
+  console.log("hola", props);
   return (
     <>
       {props.detail.map((product) => (
-        <tr className="tr__body">
+        <tr className="tr__body" key={product.product_id}>
           <td>{product.investor}</td>
           <td>${product.sold.toLocaleString()}</td>
           <td>
-            <ProgressBarCircular />
+            <ProgressBarCircular purchased={product.purchased} />
           </td>
           <td>
             <div className="td__buttons">
@@ -30,7 +29,7 @@ const RowProduct = (props) => {
                     width="30px"
                     sizeImg="15px"
                     onClick={() => {
-                      console.log("Hello");
+                      props.setEdit(true);
                     }}
                   />
                   <ButtonOval

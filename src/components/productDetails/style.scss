@@ -11,9 +11,20 @@
   -moz-box-shadow: -11px 2px 17px -7px RGB(0 0 0 / 68%);
 }
 
+th, td{
+  padding: 0px 20px;
+}
+
+td{
+  color: $grayColor;
+  font-weight: 700;
+  font-size: 12px;
+}
+
 .table__tbody {
   background-color: $whiteColor;
   text-align: left;
+  height: 270px;
 }
 
 table {
@@ -34,6 +45,24 @@ table {
     border-bottom: 1px solid $whiteColor;
     max-width: 150px;
   }
+}
+.head__edit{
+  height: 6px;
+  padding: 20px;
+  background-color: $thirdColor;
+  color: $whiteColor;
+}
+
+table tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+table thead, table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 th {

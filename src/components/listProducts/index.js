@@ -14,17 +14,18 @@ const ListProducts = (props) => {
   }, []);
 
   return (
-    <section className="section">
+    <section className={props.edit ? "section section__hide" : "section"}>
       <div className="section__title">
         <small className="title__small">Select a product to syndicate</small>
       </div>
-      <div className="products"> 
+      <div className="products">
         {products.map((product) => (
           <Product
-            setItem = {props.setItem}
+            setItem={props.setItem}
             key={product.product_id}
             id={product.product_id}
             date={product.date}
+            purchased={product.purchased}
             total={product.total}
           />
         ))}

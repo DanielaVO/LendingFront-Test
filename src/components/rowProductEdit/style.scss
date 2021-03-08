@@ -1,15 +1,31 @@
 @import "../../colors.scss";
 $borderColor: #c1c1c1;
 
-.td__edit {
+.display-row {
   display: flex;
   flex-direction: column;
-  width: 60%;
+}
+
+.tr__edit {
+  display: flex;
+  padding: 20px;
+}
+
+.investor {
+  flex: 3;
+}
+
+.sold {
+  flex: 2;
+}
+
+.buttons {
+  flex: 2;
 }
 
 .tr__edit {
   border-bottom: 1px solid $borderColor;
-  height: 70px;
+  height: 50px;
   label {
     font-size: 12px;
     font-weight: 700;
@@ -28,6 +44,7 @@ select {
   border: 0;
   border-bottom: 1px solid $grayColor;
   border-radius: 0;
+  width: 65%;
   &:focus,
   &:active {
     outline: 0;

@@ -5,7 +5,7 @@ const Product = (props) => {
     <>
       <div
         className="container"
-        onClick={() => props.setItem({ id: props.id, total: props.total })}
+        onClick={() => props.setItem({ id: props.id })}
       >
         <div className="container__info">
           <div className="info__product">

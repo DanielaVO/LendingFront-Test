@@ -3,6 +3,7 @@ import "./style.scss";
 const ButtonOval = (props) => {
   return (
     <div
+      onClick={props.onClick ? props.onClick : null}
       className="button"
       style={{
         backgroundColor: props.bgColor,
