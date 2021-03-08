@@ -11,11 +11,12 @@
   -moz-box-shadow: -11px 2px 17px -7px RGB(0 0 0 / 68%);
 }
 
-th, td{
+th,
+td {
   padding: 0px 20px;
 }
 
-td{
+td {
   color: $grayColor;
   font-weight: 700;
   font-size: 12px;
@@ -35,18 +36,13 @@ table {
 
 .table__head {
   background-color: $thirdColor;
-  height: 34px;
+  height: 14px;
+  padding: 10px 0px;
   align-items: center;
   font-weight: 200;
-  &:after {
-    content: "";
-    display: block;
-    margin-bottom: -1;
-    border-bottom: 1px solid $whiteColor;
-    max-width: 150px;
-  }
 }
-.head__edit{
+
+.head__edit {
   height: 6px;
   padding: 20px;
   background-color: $thirdColor;
@@ -59,7 +55,8 @@ table tbody {
   overflow-y: scroll;
 }
 
-table thead, table tbody tr {
+table thead,
+table tbody tr {
   display: table;
   width: 100%;
   table-layout: fixed;

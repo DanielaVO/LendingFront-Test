@@ -3,7 +3,7 @@ import ButtonOval from "../buttonOval";
 import Close from "../../assets/close_color.png";
 import Save from "../../assets/save_white.png";
 
-const RowProductEdit = (props) => {
+const RowProductEdit = () => {
   return (
     <>
       <div className="tr__edit">
@@ -13,6 +13,7 @@ const RowProductEdit = (props) => {
             <option value="YCombinator">Y Combinator</option>
             <option value="SaStr">SaStr</option>
             <option value="IndieGo">IndieGo</option>
+            <option value="Seedrocket">Seedrocket</option>
           </select>
         </div>
         <div className="sold display-row">

@@ -13,7 +13,6 @@ const ProductDetails = (props) => {
   useEffect(() => {
     getProductDetail().then((productDetail) => setProductDetail(productDetail));
   }, []);
-  console.log(productDetail);
 
   return (
     <section className="app__section--detail">
@@ -60,7 +59,7 @@ const ProductDetails = (props) => {
           )}
         </div>
       </div>
-      <TableFooter amount="12345" total="1232456" />
+      <TableFooter />
     </section>
   );
 };

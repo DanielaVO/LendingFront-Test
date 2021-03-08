@@ -5,7 +5,6 @@ import Edit from "../../assets/edit.png";
 import Close from "../../assets/close_color.png";
 
 const RowProduct = (props) => {
-  console.log("hola", props);
   return (
     <>
       {props.detail.map((product) => (
