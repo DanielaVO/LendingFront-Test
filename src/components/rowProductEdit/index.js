@@ -6,7 +6,7 @@ import Save from "../../assets/save_white.png";
 const RowProductEdit = () => {
   return (
     <>
-      <div className="tr__edit">
+      <div className="edit">
         <div className="investor display-row">
           <label>Select investor</label>
           <select>
@@ -16,11 +16,11 @@ const RowProductEdit = () => {
             <option value="Seedrocket">Seedrocket</option>
           </select>
         </div>
-        <div className="sold display-row">
+        <div className="flex display-row">
           <label>Sold</label>
           <input type="number"></input>
         </div>
-        <div className="buttons td__buttons ">
+        <div className="flex buttons ">
           <ButtonOval
             icon={Save}
             bgColor="#05a2aa"
